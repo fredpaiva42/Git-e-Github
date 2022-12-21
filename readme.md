@@ -80,10 +80,13 @@ Para desfazer alterações que foram adicionadas para commit: `git reset HEAD ar
 
 Para desfazer alterações que foram commitadas: `git revert hash-do-commit`.
 
-Para salvar alterações temporariamente: `git stash`. `git stash list` consigo ver tudo o que está salvo temporariamente.
+Para salvar alterações temporariamente: `git stash`. Com `git stash list` consigo ver tudo o que está salvo temporariamente.
 
 Para pegar a ultima alteração que foi salva temporariamente: `git stash apply`.
 
 Para apagar a alteração da memória temporaria: `git stash drop`.
 
 Para pegar e já remover ao mesmo tempo: `git stash pop`.
+
+Para ir até um commit específico: `git checkout <hash>`. Qualquer alteração feita nele é perdida, a menos que eu crie uma nova branch, então o fluxo de trabalho continua a partir dessa nova branch.
+
