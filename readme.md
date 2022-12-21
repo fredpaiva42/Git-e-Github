@@ -90,3 +90,12 @@ Para pegar e já remover ao mesmo tempo: `git stash pop`.
 
 Para ir até um commit específico: `git checkout <hash>`. Qualquer alteração feita nele é perdida, a menos que eu crie uma nova branch, então o fluxo de trabalho continua a partir dessa nova branch.
 
+Para ver as diferenças entre dois commits: `git diff <hash-first-commit>..<hash-last-commit>`.
+
+Para ver as diferenças entre duas branchs: `git diff <branch1>..<branch2>`.
+
+Como fazer um marco na minha aplicação TAG, um ponto que não muda mais: `git tag -a nome -m "mesagem se quiser"`
+
+`git tag` lista as tags existentes.
+
+Para enviar a tag para o repositório remoto: `git push nome nome-tag`.
