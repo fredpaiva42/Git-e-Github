@@ -1,3 +1,4 @@
+# Comandos do Git
 Inicializar um repositório: `git init`
 
 Ver o status dos arquivos do repositório: `git status`
@@ -58,5 +59,31 @@ Para clonar um repositório: `git clone caminho/para/o/repositorio/a/ser/clonado
 Para enviar as alterações para o repositório remoto:
 `git push nome-repositorio-remoto branch-origem`.
 
+Se eu quiser que em todas as outras vezes que eu for subir as alterações nesse repositório, só digitar `git push`. Na primeira vez que eu enviar preciso colocar a flag `-u`. 
+
 Para trazer os dados de um repositório remoto:
 `git pull nome-repositorio-remoto branch-destino`.
+
+Para criar uma nova branch: `git branch nome-branch`.
+
+Para criar e já ir direto para nova branch: `git checkout -b nome-branch`.
+
+Para alternar entre as branchs: `git checkout nome-branch`.
+
+Para unir as alterações das outras branchs com a branch principal e gerar um merge commit: `git merge nome-branch-que-eu-quero-enviar-para-main`.
+
+Para atualizar a main com os commits de outras branchs sem poluir o log: `git rebase nome-branch`.
+
+Para desfazer as últimas alterações antes de adicionar: `git checkout -- arquivo`.
+
+Para desfazer alterações que foram adicionadas para commit: `git reset HEAD arquivo`.
+
+Para desfazer alterações que foram commitadas: `git revert hash-do-commit`.
+
+Para salvar alterações temporariamente: `git stash`. `git stash list` consigo ver tudo o que está salvo temporariamente.
+
+Para pegar a ultima alteração que foi salva temporariamente: `git stash apply`.
+
+Para apagar a alteração da memória temporaria: `git stash drop`.
+
+Para pegar e já remover ao mesmo tempo: `git stash pop`.
